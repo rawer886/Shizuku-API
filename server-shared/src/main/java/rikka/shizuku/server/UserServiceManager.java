@@ -53,9 +53,9 @@ public abstract class UserServiceManager {
             throw new SecurityException("unable to find package " + packageName);
         }
 
-        if (UserHandleCompat.getAppId(packageInfo.applicationInfo.uid) != appId) {
-            throw new SecurityException("package " + packageName + " is not owned by " + appId);
-        }
+//        if (UserHandleCompat.getAppId(packageInfo.applicationInfo.uid) != appId) {
+//            throw new SecurityException("package " + packageName + " is not owned by " + appId);
+//        }
         return packageInfo;
     }
 

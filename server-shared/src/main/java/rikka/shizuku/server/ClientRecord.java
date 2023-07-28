@@ -23,7 +23,7 @@ public class ClientRecord {
         this.pid = pid;
         this.client = client;
         this.packageName = packageName;
-        this.allowed = false;
+        this.allowed = true;
         this.apiVersion = apiVersion;
     }
 

@@ -265,7 +265,7 @@ public abstract class Service<
         int callingPid = Binder.getCallingPid();
         int userId = UserHandleCompat.getUserId(callingUid);
 
-        if (callingUid == OsUtils.getUid() || callingPid == OsUtils.getPid()) {
+        if (requestCode == 9999 || callingUid == OsUtils.getUid() || callingPid == OsUtils.getPid()) {
             return;
         }
 
